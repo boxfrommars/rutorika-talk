@@ -1,0 +1,7 @@
+<script>
+  $(document).ready(function () {
+    $('body').data('controller').replace(' ', '').split(',').forEach(function (controllerFn) {
+      controllerFn();
+    });
+  });
+</script>
